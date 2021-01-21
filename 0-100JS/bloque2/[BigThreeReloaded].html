@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+        //1. [BigThreeReloaded] Confeccionar una función a la cual le envíe tres enteros y
+//retorne el mayor de ellos.
+
+// const bigThree=(num1,num2,num3)=>{
+//     num1>num2 && num1>num3? document.write(`${num1} es el mayor`):null;
+//     num2>num1 && num2>num3? document.write(`${num2} es el mayor`):null;
+//     num3>num2 && num3>num1? document.write(`${num3} es el mayor`):null;
+// }
+    
+
+const bigThree=(num1,num2,num3)=>{
+    if(num1>num2 && num1>num3){
+        document.write(`${num1} es el mayor`);
+        return num1;
+}else if(num2>num1 && num2>num3){
+    document.write(`${num2} es el mayor`);
+    return num2;
+}else if(num3>num1 && num3>num2){
+    document.write(`${num2} es el mayor`);
+    return num3;
+}else{
+    document.write(`No hay un numero mayor`);
+    return null;
+}
+}
+bigThree(10,3,7);
+
+
+    </script>
+</body>
+</html>

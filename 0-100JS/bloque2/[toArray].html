@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+
+    
+
+ //10. [toArray] Crear una función que reciba un string y lo convierta en un array de
+ //caracteres.
+
+ const toArray = (string)=>{
+     const newArray=[];
+     for (let i = 0; i < string.length; i++) {
+         newArray.push(string[i]);
+         
+     }
+     return newArray;
+    }
+    const text ="Hola Mundo";
+    const ArrayNew= toArray(text);
+    console.log(ArrayNew);
+
+    
+    </script>
+</body>
+</html>

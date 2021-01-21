@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+
+    
+
+//4[newArray] Crear una función que reciba dos dos arrays (arreglos) como
+//argumentos y retorne el resultado en un nuevo arreglo
+//Ejemplo:
+//[1,2,3] con ["a","b","c"] debería quedar como [1,2,3,"a","b","c"]
+
+const newArray=(arr1,arr2)=>{
+    const newArray= arr1.concat(arr2);
+    return newArray;
+}
+
+ const arr1=[1,2,3,4,5];
+    const arr2=["a","b","c","d"];
+    
+    const newArrayReturn = newArray(arr1,arr2);
+    console.log(newArrayReturn);
+    </script>
+</body>
+</html>

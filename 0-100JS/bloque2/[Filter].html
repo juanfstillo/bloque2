@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+
+    
+
+//6-[Filter] Crear una función que reciba un array de números como argumento y retorne un array con los elementos distintos.
+const Filter=(arr1)=>{
+ const result= [...new Set(arr1)]; //Transformar en set el array y despues volverlo a convertir en array.
+return result;
+}
+const array1=[5,1,2,3,4,4,3,4,3,1,1,1,1,1,1,1,100,12,33,44,90];
+const array2=  [3,4];
+const result = Filter(array1);
+console.log(result);
+    </script>
+</body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+
+    
+
+ //11. [AlCesarLoQueEsDelCesar] Implementar una función que pueda aplicar el cifrado del césar. (Googlear)
+
+ const AlCesarLoQueEsDelCesar=(string,desplazamiento=3)=>{
+        const abecedarioString="abcdefghijklmnopqrstuvwxyz";
+        let cifrado ="";
+        desplazamiento = (desplazamiento % 26 + 26) % 26;
+
+        for (let i = 0; i < string.length; i++) {
+            if(abecedarioString.indexOf(string[i])!=-1) {
+                let posicion = ((abecedarioString.indexOf(string[i])+desplazamiento)%26);
+                cifrado += abecedarioString[posicion];
+            }else{
+                cifrado+= string[i];
+            }
+
+        }
+        return cifrado;
+    }
+    const text ="Hola Mundo";
+    const cif =  AlCesarLoQueEsDelCesar(text,7);
+    console.log(cif);
+
+    
+    </script>
+</body>
+</html>
